@@ -1,0 +1,63 @@
+{
+  "name": "metro-calendar",
+  "description": "A Metro-inspired Pebble calendar watchface with an optional weather tile.",
+  "author": "Open-source contributors",
+  "version": "1.0.1",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.8"
+  },
+  "pebble": {
+    "displayName": "Metro Calendar",
+    "uuid": "afe4a72b-1494-431d-90b8-944dae41d098",
+    "sdkVersion": "3",
+    "projectType": "moddable",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "HELLO",
+      "EVENT_STATE",
+      "EVENT_TITLE",
+      "EVENT_WHEN",
+      "EVENT_KIND",
+      "SHOW_WEATHER",
+      "SKIP_ALL_DAY",
+      "WEATHER_TEMP",
+      "WEATHER_CONDITION",
+      "COLOR_THEME",
+      "EVENT_TITLE_2",
+      "EVENT_WHEN_2",
+      "EVENT_TITLE_3",
+      "EVENT_WHEN_3",
+      "ACCENT_COLOR",
+      "LIGHT_MODE"
+    ],
+    "usesPermissions": [
+      {
+        "name": "Calendar",
+        "reason": "To show your next calendar event",
+        "required": false
+      },
+      {
+        "name": "Location",
+        "reason": "To show weather from your selected provider",
+        "required": false
+      }
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
